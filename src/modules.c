@@ -10,7 +10,9 @@ void loadData(char * filePath, List * sortedList, List * hashmap) {
 	check(filePath, "No file path specified.");
 	check(filePath[0] != '\0', "No file path specified.");
 	
-	++filePath;
+	if (filePath[0] == ' ')
+	  ++filePath;
+	
 	database = fopen(filePath, "r");
 	check(database, "Unable to load file.");
 	

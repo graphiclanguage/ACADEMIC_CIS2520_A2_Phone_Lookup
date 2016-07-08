@@ -14,6 +14,12 @@ int main(int argc, char * argv[]) {
 	loadHash(hashmap, NUM_BUCKETS, sizeof(Form), NULL); // Only freed via list
 	
 	printf("Reverse Phone Lookup App, enter 'h' for a list of commands.\n");
+	
+	if (argc == 2) {
+	  loadData(argv[1], &sortedList, hashmap);
+	  putchar('\n');
+	}
+	
 	printf("> ");
 	
 	char buffer[64];
