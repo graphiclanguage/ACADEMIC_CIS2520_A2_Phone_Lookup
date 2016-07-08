@@ -1,0 +1,149 @@
+Your Task:
+
+	For this assignment you will use a hash table to create a reverse lookup 
+	directory for phone numbers. You will first load the list of names and 
+	phone numbers (from an input file) into a linked list of structures. Sort
+	the list as you add the names. You will then use the phone numbers to 
+	create a hash table that points back to the linked list (to the struct 
+	that contains the phone number). Your hash table must implement a collision
+	resolution strategy. Your hash table size should be no more than 2/3 the
+	size of the data set.
+
+	The program must provide a menu for operation. Menu items should include an
+	option for loading a file, one for adding a single entry to the list, one 
+	for printing the entire list of names and numbers, and one for looking up a
+	name by entering a 10 digit phone number.
+
+	You will be asked to hand in your code, your testing files, and your 
+	interpretation of your test results.
+
+
+Checklist:
+
+	Download the assignment starter zip file if you like.
+
+	Make sure your linked list code is working well and is well tested
+
+	Set up your assignment folder in the same way as you did for assignment one
+
+	Write the code to load data into the linked list and keep it sorted
+
+	Keep records of your testing as you go for your testing document
+
+	Write a hash function that will hash 10 digit phone numbers. There won't be
+	duplicate numbers. Test your hash function.
+
+	Choose your collision resolution strategy and implement your hash table
+
+	Test your hash table thoroughly by writing a program that does nothing but
+	test the hash table.
+
+	Write the menu-driven program to load the phone list and manipulate it
+
+	Document your testing and your design choices (i.e. your collision 
+	resolution strategy) in your testing and design document in the docs folder
+
+
+Musts:
+
+	You must meet the must requirements to get a mark greater than zero. If you
+	do not meet the musts, your assignment will be given a grade of zero.
+
+	Your solution must compile (with -Wall -ansi), using a makefile, with no 
+	errors or warnings and must run without crashing on the SOCS linux 
+	computers used for grading.
+
+	Your solution must successfully load the input file provided as an argv 
+	command line argument into a linked list.
+
+	Your solution must provide a hash function testing program that shows 
+	conclusively that your hash function works.
+
+	Your submission must have a README.txt file that describes how to run the
+	testing programs as well as the menu driven program. The readme file must
+	contain your name and student number.
+
+	You must have your solution neatly organized into the folder structure 
+	discussed in the section on coding conventions for the class. (src/bin/
+	include/docs/)
+
+
+Shoulds:
+
+	If you complete all of the Shoulds and all of the Musts, it is possible for
+	your program to receive full marks.
+
+	The testing document should contain a brief description of the hash 
+	function you choose to use and describe why you chose the collision 
+	resolution strategy.
+
+	Your solution should use a hash table to perform the reverse lookup of 
+	names when provided with a phone number.
+
+	Your testing program should test all of the functions for the hash table
+	ADT in addition to testing the hash function
+
+	You should have at least one recursive algorithm in your linked list 
+	implementation
+
+	You should provide a menu-driven program (as described above) for TAs to
+	use to grade your submission
+
+
+Input File:
+
+	The input file will be a text file with each entry on a separate line. An
+	entry will consist of FirstName, LastName, PhoneNumber. For example a line
+	of the file might look like this: Barney,Rubble,5194657865 There will be at
+	least 20 entries in the data file. There is no upper bound on the number of
+	entries.
+
+
+Deliverables and Submission Requirements:
+
+	A single zip file containing the following:
+		Source code for all ADTs, testing programs and the phone list program.
+		Readme file
+		Document discussing your testing and the results you found (in the docs
+		folder)
+		Correctly working makefile for compiling everything
+		
+	Name the zip file with your name: e.g. LastnameFirstNameA2.zip (NO SPACES)
+	
+	Do not use any other form of compression, only zip. (no rar files no rz, 
+	gz, 7z, arg, cab, etc...). We will not mark your assignment if it is in any
+	compressed format other than zip.
+	
+	
+Grade Allocation:
+
+	This assignment is worth 10% of your final grade. It will be marked out of
+	100 points. No half marks will be given.
+
+	Linked List usage(15)
+		correctly keeps entries sorted (5)
+		recursive function (10)
+
+	Hash Table ADT(20)
+		hash table ADT (5)
+		hash function (5)
+		collision resolution design (10)
+		
+	Hash Table Usage (20)
+		used correctly in phone list program (10)
+		sizes table appropriately (5)
+		collision resolution works properly given phone number data (5)
+
+	User Interface (10)
+		usability (5)
+		information display(5)
+
+	Testing (15)
+		adequate testing done (5)
+		program gives correct results (10)
+
+	Coding practices (20)
+		comments and Source Code (structure, 
+		variable and operation naming conventions) (5)
+		file/folder organization and file naming conventions (5)
+		data structures modules reused appropriately (10)
