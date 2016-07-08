@@ -1,3 +1,7 @@
+/* Shawn Hustins
+ * ID: 0884015
+ */
+
 #ifndef _list_h_
 #define _list_h_
 
@@ -35,7 +39,7 @@ int newList(List * list, size_t dataSize, freeData function);
  * destroyList
  * IN:	 *list - pointer to an existing list
  * OUT:	 return 0 on success
- * 		 return -1 on failure  (no list specified)
+ * 		 return -1 on failure  (no list specified, empty list)
  * POST: frees all memory allocated to nodes of list, calls function to free
  * 		 data if one exists
  */

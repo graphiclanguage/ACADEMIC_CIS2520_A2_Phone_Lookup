@@ -1,1 +1,47 @@
- 
+*******************************************************************************
+Shawn Hustins															0884015
+CIS 2520 DE										  	   A2: Reverse Phone Lookup
+July 8 2016
+*******************************************************************************
+
+*********
+List Test
+*********
+
+A list test has been included because the linked list has been changed 
+significantly since it's last submission (due to marks lost). The test source
+file will help in understanding how to inteface with the list class.
+
+All functions operate as expected.
+
+
+*********
+Hash Test
+*********
+
+The hash test will help in understanding how to interface with the hash table
+class.
+
+All functions operate as expected.
+
+
+*******************
+Hash Implementation
+*******************
+
+The hash function used simply takes the modulus of the key associated with the
+data being added or searched for. The hash class is completely generic; it can
+store any data specified by the user, it can be of any size specified by the
+user, and the key can be established from any part of the data being stored 
+(maybe another function that translates a string into an number to act as the
+key. 
+
+The hash table class is a subclass of the linked list class and the linked
+list class is completely hidden from the user of the hash table class (ie.
+the user does not need to understand the linked list inteface in order to use
+the hash table class.)
+
+The collision resolution strategy chosen is separate chaining. This allows for
+support of any data set size while avoiding the complication of dynamic arrays
+and having to rehash all the existing data.
+

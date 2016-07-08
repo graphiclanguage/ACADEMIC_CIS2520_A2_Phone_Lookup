@@ -6,15 +6,11 @@
 
 int loadHash(List * hashmap, int buckets, size_t dataSize, freeData function) {
 	
-	int i = 0;
-	
-	for (i = 0; i < buckets; ++i)
+	for (int i = 0; i < buckets; ++i)
 		check(!newList(&hashmap[i], dataSize, function), "Hash loading error");
 	return 0;
 	
 error:
-	for (--i; i >= 0; --i)
-		destroyList(&hashmap[i]);
 	return -1;
 }
 

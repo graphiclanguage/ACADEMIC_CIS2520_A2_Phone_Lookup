@@ -23,14 +23,16 @@ error:
 int destroyList(List * list) {
 	
 	check(list, "No list specified.");
-	while(list->head) {
-		Node * current = list->head;
-		list->head = current->next;
-		if (list->freeFunc)
-			list->freeFunc(current->data);
-		free(current->data);
-		free(current);
-	}
+	check(list->head, "Empty List.");
+	
+	Node * current = list->head;
+	list->head = current->next;
+	if (list->freeFunc)
+		list->freeFunc(current->data);
+	free(current->data);
+	free(current);
+
+	destroyList(list);
 	
 	return 0;
 	
